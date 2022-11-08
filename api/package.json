@@ -1,0 +1,29 @@
+{
+  "name": "booking-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramanes3822/mern-booking-app.git"
+  },
+  "author": "ramanes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramanes3822/mern-booking-app/issues"
+  },
+  "homepage": "https://github.com/ramanes3822/mern-booking-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.1",
+    "nodemon": "^2.0.20"
+  }
+}
