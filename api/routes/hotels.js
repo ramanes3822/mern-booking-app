@@ -1,5 +1,12 @@
 import exspress from "express";
-import {createHotel, deleteHotel, getHotelbyid, getHotels, updateHotel} from "../controllers/hotelController.js";
+import {
+    countByCity, countByType,
+    createHotel,
+    deleteHotel,
+    getHotelbyid,
+    getHotels,
+    updateHotel
+} from "../controllers/hotelController.js";
 import {verifyAdmin} from "../utils/verifyToken.js";
 const router = exspress.Router();
 
@@ -13,9 +20,11 @@ router.put('/:id',verifyAdmin, updateHotel);
 router.delete('/:id',verifyAdmin,deleteHotel);
 
 //GET
-router.get('/:id', getHotelbyid);
+router.get('/find/:id', getHotelbyid);
 
 //GET ALL
 router.get('/', getHotels);
+router.get('/countbycity', countByCity);
+router.get('/countbytype', countByType);
 
 export default router;
